@@ -29,5 +29,3 @@ Do the following in terminal:
 4. On GitHub, open a new pull request for your branch and it will be reviewed and if approved merged into master
 
 ## To do list
-
-again
