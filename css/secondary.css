@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-footer {
+    flex-shrink: 0;
+}
+
+.control > :last-child {
+    margin-bottom: 3rem;
+}
+
+.next-button {
+    text-align:center;
+}
