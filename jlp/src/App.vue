@@ -17,7 +17,7 @@
                 <router-link to="/help">Where can I get help</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/family-violent">What is family violence?</router-link>
+                <router-link to="/family-violence">What is family violence?</router-link>
             </b-navbar-item>
             <b-navbar-item>
                 <router-link to="/support">How to support a friend?</router-link>
@@ -29,7 +29,7 @@
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-primary">
+                    <a class="button is-primary" href="https://google.com">
                         <strong>Exit</strong>
                     </a>
                 </div>
