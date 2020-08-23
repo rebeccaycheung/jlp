@@ -66,4 +66,8 @@ export default {
   text-align: left;
   color: #2c3e50;
 }
+
+.root {
+    margin: 80px 50px 100px 50px;
+}
 </style>

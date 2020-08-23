@@ -15,3 +15,11 @@ export default {
   }
 }
 </script>
+
+<style>
+li {
+  display: list-item;
+  list-style-type: disc;
+  margin-left: 50px;
+}
+</style>
