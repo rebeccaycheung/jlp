@@ -1,33 +1,13 @@
 <template>
-  <div class="support">
-    <section class="hero is-medium">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            {{ title }}
-          </h1>
-          <Paragraph :list="content"/>
-          <UnorderedList :list="list1"/>
-          <Paragraph :list="content1"/>
-          <UnorderedList :list="list2"/>
-          <Paragraph :list="content2"/>
-          <UnorderedList :list="list3"/>
-          <Paragraph :list="content3"/>
-          <p>
-            <a href="https://www.whiteribbon.org.au/">https://www.whiteribbon.org.au/</a>
-          </p>
-          <p>
-            <a href="http://www.dvrcv.org.au/">http://www.dvrcv.org.au/</a>
-          </p>
-          <p>
-            <a href="https://www.1800respect.org.au/help-and-support/">https://www.1800respect.org.au/help-and-support/</a>
-          </p>
-          <p>
-            <a href="https://www.safesteps.org.au/understanding-family-violence/what-is-family-violence/">https://www.safesteps.org.au/understanding-family-violence/what-is-family-violence/</a>
-          </p>
-        </div>
-      </div>
-    </section>
+  <div class="root">
+    <h1 class="title">{{ t1 }}</h1>
+    <Paragraph :list="p1"/>
+    <h1 class="title">{{ t2 }}</h1>
+    <Paragraph :list="p2"/>
+    <h1 class="title">{{ t3 }}</h1>
+    <UnorderedList :list="l1"/>
+    <h1 class="title">{{ t4 }}</h1>
+    <UnorderedList :list="l2"/>
   </div>
 </template>
 
@@ -44,56 +24,52 @@ export default {
   },
   data() {
     return {
-      title: `What is family violence?`,
-      content: [
-        `“Family violence” is a term used to describe any violent, threatening, coercive or controlling behaviour 
-        that occurs between people who share or have shared a family or intimate relationship.`,
-        `Family violence is not limited to physical violence but includes:`
-        ],
-      list1: [
-        'direct or indirect threats',
-        'sexual assault',
-        'emotional and psychological torment',
-        'economic control',
-        'damage to property',
-        'social isolation',
-        'any behaviour which causes a person to live in fear'
+      t1: `Background Information`,
+      p1: [
+        `It can be really difficult for you to watch your friend go through an abusive, or even just bad relationship. 
+        It can be hard to know what the right thing to do is, and how to make sure your friend gets the support they need, 
+        without hurting yourself or your friendship.`,
+        `Your friend might have a very different point of view from you- they might not think the relationship is abusive, 
+        or might feel responsible for any abuse they’ve gone through. It might be difficult for your friend to even have a 
+        conversation about their relationship.`,
+        `Even if your friend realises the relationship is abusive, they might still choose to stay, or will get back together 
+        with their partner lots of times.`,
+        `This may be frustrating, but the decision to leave can only be made by the person experiencing the abuse, 
+        and leaving the relationship may expose them to more danger.`,
+        `If they stay, they will still need support from friends and family. If they leave, they may feel sad and 
+        lonely and need support.`
       ],
-      content1: [
-       `A person can still suffer from family violence even if the relationship between the perpetrator and the 
-       victim no longer exists.`,
-       `Family violence can occur in a range of scenarios, such as between elderly adults and their children, or 
-       between siblings. Most commonly however, family violence is perpetrated by current or previous male partners 
-       against female partners.`,
-       `Family violence has very serious impacts on both individual sufferers and on society:`
+      t2: `What can I do to help?`,
+      p2: [
+        `Don’t be afraid to reach out to a friend who you think needs help`,
+        `Focus on your friend’s feelings and make them feel supported, rather than on their partner`,
+        `Be supportive and listen patiently. Acknowledge their feelings and be respectful of their decisions`,
+        `If they break up with the abusive partner, continue to be supportive after the relationship is over`,
+        `Even when you feel like there’s nothing you can do, don’t forget that by being supportive and caring, 
+        you’re already doing a lot`,
+        `Don’t contact their abuser or publicly post negative things about them online. It’ll only worsen the 
+        situation for your friend`
       ],
-      list2: [
-        'It is the leading contributor to preventable death, disability and illness in Victorian women aged 15 to 44',
-        'It results in at least one woman being admitted to hospital every three hours',
-        'One in five women had experienced violence from a current or previous partner since the age of 15',
-        'In 2015 intimate partner violence contributed 41% of homicide & violence burden, 19% each of suicide & self-inflicted injuries and depressive disorders burden and 18% of early pregnancy loss burden'
+      t3: `If they don’t feel comfortable with the conversation:`,
+      l1: [
+        `Don’t push the conversation too hard`,
+        `Maintain your friendship and connection`,
+        `Look out for their emotional wellbeing`,
+        `Make sure they don’t start blaming themselves for things`,
+        `Affirm that they are a good and valuable person`,
+        `Tell them that you’re concerned for their safety and want to help`,
+        `Help your friend recognize that the abuse is not “normal” and is NOT their fault. Everyone deserves a healthy, non-violent relationship`,
+        `Connect your friend to resources in their community that can give them information and guidance - SEE EMOTIONAL RESOURCES and LEGAL RESOURCES`
       ],
-      content2: [
-        `The psychological and social effects of family violence can include:`
-      ],
-      list3: [
-        'Feelings of self-blame and shame',
-        'Loss of self-esteem',
-        'Isolation from others',
-        'Depression',
-        'Anxiety',
-        'Loss of employment opportunities'
-      ],
-      content3: [
-        `The use of violence against a family member or intimate partner is a choice: an abuser chooses to use coercive or 
-        violent behaviour to have power and control over somebody else, even if they try to make excuses for themselves and 
-        their behaviour.`,
-        `While the use of family violence is a choice, there are broader factors in our society that enable family violence 
-        to exist. Gender inequity - the unequal treatment of men and women - racism, classism and a range of other factors 
-        all contribute to the problem.`,
-        `Only by raising awareness of family violence, and holding perpetrators accountable, can we hope to eradicate this 
-        social problem.`,
-        `For more information about family violence and what is being done to prevent it visit:`
+      t4: `Looking after yourself`,
+      l2: [
+        `While it’s important to be there for your friend, it’s also important to look after yourself. 
+        It is easy to get sucked into very late nights and lots of emotional labour when you are supporting your friend`,
+        `It is ok to set boundaries with your friend`,
+        `You can say that it is time for you to go to bed, or recommend that they see a counsellor because 
+        you cannot give them all the advice or support they need`,
+        `You don’t have to be solely responsible for your friend’s wellbeing`,
+        `If you feel like you aren’t coping with the pressure, it is a good idea to seek emotional resources yourself`
       ]
     }
   }
