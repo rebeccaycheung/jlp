@@ -1,8 +1,6 @@
 <template>
   <div class="root">
-    <h1 class="title">
-      {{ title }}
-    </h1>
+    <h1 class="title">{{ title }}</h1>
     <Paragraph :list="content"/>
     <UnorderedList :list="list1"/>
     <Paragraph :list="content1"/>

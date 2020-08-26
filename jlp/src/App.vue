@@ -3,13 +3,11 @@
     <b-navbar>
         <template slot="brand">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            <img src="@/assets/logo.png" />
             EMPOWERING RELATIONSHIPS
             </b-navbar-item>
         </template>
         <template slot="start">
-            <b-navbar-item>
-                <router-link to="/">Home</router-link>
-            </b-navbar-item>
             <b-navbar-item>
                 <router-link to="/quiz">Do the quiz</router-link>
             </b-navbar-item>
@@ -69,5 +67,9 @@ export default {
 
 .root {
     margin: 80px 50px 100px 50px;
+}
+
+img {
+    padding-right: 5px;
 }
 </style>
