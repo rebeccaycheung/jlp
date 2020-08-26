@@ -6,11 +6,16 @@
         </b-progress>
     </section>
     <div v-for="(question) in currentQuestions" :key="question">
-      Question {{ questions.indexOf(question)+1 }} <Question :question="question" />
+      <div class="question">
+        <b>Question {{ questions.indexOf(question)+1 }})</b>
+        <Question :question="question" />
+      </div>
     </div>
-    <b-button v-if="start > 6" type="is-light" v-on:click="prev()">Previous</b-button>
-    <b-button v-if="start <= questions.length" type="is-light" v-on:click="next()">Next</b-button>
-    <b-button v-if="start > questions.length" type="is-light">Finish</b-button>
+    <div class="button-container">
+      <b-button v-if="start > 6" type="is-light" v-on:click="prev()">Previous</b-button>
+      <b-button v-if="start <= questions.length" type="is-primary" v-on:click="next()">Next</b-button>
+      <b-button v-if="start > questions.length" type="is-primary">Finish</b-button>
+    </div>
   </div>
 </template>
 
@@ -81,3 +86,15 @@ export default {
   }
 }
 </script>
+
+<style>
+.question {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+</style>

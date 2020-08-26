@@ -1,5 +1,5 @@
 <template>
-  <div class="question">
+  <div>
     {{ question }}
     <div class="block">
       <b-radio v-model="radio"
@@ -35,6 +35,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>
