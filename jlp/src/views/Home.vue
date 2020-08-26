@@ -10,8 +10,12 @@
             {{ description }}
           </p>
           <div class="button-container">
-            <b-button type="is-light" class="leftButton">{{ leftButton }}</b-button>
-            <b-button type="is-light">{{ rightButton }}</b-button>
+            <b-button type="is-light" class="leftButton">
+              <router-link to="/quiz">{{ leftButton }}</router-link>
+            </b-button>
+            <b-button type="is-light">
+              <router-link to="/quiz">{{ rightButton }}</router-link>
+            </b-button>
           </div>
         </div>
       </div>
