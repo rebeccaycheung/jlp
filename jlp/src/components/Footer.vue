@@ -5,7 +5,10 @@
         <strong class="has-text-weight-semibold">Empowering Relationships Project 2020</strong>
       </p>
       <p>In collaboration with diversIT</p>
-      <img src="@/assets/logo.png" />
+      <p>
+        <img src="@/assets/logo.png" />
+        <img src="@/assets/diversit.png" />
+      </p>
       <p>Check it out on <a href="https://github.com/rebeccaycheung/jlp/blob/master">Github</a></p>
     </div>
   </footer>
@@ -20,6 +23,10 @@ export default {
 
 <style scoped>
 img {
-  width: 30px;
+  width: 50px;
+}
+
+.footer {
+  font-size: 12px;
 }
 </style>
