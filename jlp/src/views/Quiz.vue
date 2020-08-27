@@ -5,16 +5,22 @@
             {{ index }} out of 3
         </b-progress>
     </section>
-    <div v-for="(question) in currentQuestions" :key="question">
+    <div v-for="(question) in currentQuestions" :key="question.index">
       <div class="question">
-        <b>Question {{ questions.indexOf(question)+1 }}</b>
-        <Question :question="question" :index="questions.indexOf(question)+1" />
+        <b>Question {{ question.index }}</b>
+        <Question
+          :question="question.question"
+          :index="question.index"
+          :yes="question.points.yes"
+          :no="question.points.no"
+          :maybe="question.points.maybe"
+        />
       </div>
     </div>
     <div class="button-container">
       <b-button v-if="start > 6" type="is-light" v-on:click="prev()">Previous</b-button>
       <b-button v-if="start <= questions.length" type="is-primary" v-on:click="next()">Next</b-button>
-      <b-button v-if="start > questions.length" type="is-light" v-on:click="finish()">Finish</b-button>
+      <b-button v-if="start > questions.length" type="is-primary" v-on:click="finish()">Finish</b-button>
     </div>
   </div>
 </template>
@@ -54,6 +60,15 @@ export default {
       this.index -= 1
       this.progress -= 33.33
     },
+    finish() {
+      let total = 0
+      const questions = this.$store.state.questions
+      for (const i in questions) {
+        total = total + questions[i]
+      }
+      this.$store.commit('setTotal', total)
+      this.$router.push({ path: 'result' })
+    }
   },
   data() {
     return {
@@ -64,24 +79,160 @@ export default {
       currentQuestions: [],
       prevQuestions: [],
       questions: [
-        `Do you have close relationships with your friends or family?`,
-        `Does your partner ever discourage you from spending time with your friends or family?`,
-        `Does your partner act jealous or obsessive over you?`,
-        `Does your partner check your phone or social media to look at who you’ve been talking to?`,
-        `Does your partner experience mental health issues? E.g. depression, anxiety.`,
-        `If you answered yes to question 5, has your partner ever threatened to commit suicide or blamed you for their mental health problems?`,
-        `Have you recently been pregnant or given birth?`,
-        `Do you regularly use drugs or alcohol? E.g. more than three standard twice a week.`,
-        `Does your partner regularly use drugs or alcohol more than 3 times a week?`,
-        `Does your partner break or throw objects when they are angry?`,
-        `Has your partner ever threatened to physically harm you or someone close to you? This can include pets.`,
-        `Has your partner ever physically harmed you?`,
-        `Do you experience mental health issues? E.g. depression, anxiety.`,
-        `Does your partner want to know where you are all the time?`,
-        `Does your partner call or text you constantly, and get angry if you don’t respond?`,
-        `Has your partner ever pressured you to do something sexual that you did not want to do?`,
-        `Has your partner been violent on other occasions that did not involve you? For example, have they gotten into physical fights with other people?`,
-      ],
+        {
+          index: 1,
+          question: `Do you have close relationships with your friends or family?`,
+          points: {
+            yes: 0,
+            no: 1,
+            maybe: 0,
+          }
+        },
+        {
+          index: 2,
+          question: `Does your partner ever discourage you from spending time with your friends or family?`,
+          points: {
+            yes: 1,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 3,
+          question: `Does your partner act jealous or obsessive over you?`,
+          points: {
+            yes: 5,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 4,
+          question: `Does your partner check your phone or social media to look at who you’ve been talking to?`,
+          points: {
+            yes: 5,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 5,
+          question: `Does your partner experience mental health issues? E.g. depression, anxiety.`,
+          points: {
+            yes: 1,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 6,
+          question: `If you answered yes to question 5, has your partner ever threatened to commit suicide or blamed you for their mental health problems?`,
+          points: {
+            yes: 10,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 7,
+          question: `Have you recently been pregnant or given birth?`,
+          points: {
+            yes: 5,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 8,
+          question: `Do you regularly use drugs or alcohol? E.g. more than three standard twice a week.`,
+          points: {
+            yes: 1,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 9,
+          question: `Have you recently been pregnant or given birth?`,
+          points: {
+            yes: 1,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 10,
+          question: `Does your partner regularly use drugs or alcohol more than 3 times a week?`,
+          points: {
+            yes: 10,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 11,
+          question: `Does your partner break or throw objects when they are angry?`,
+          points: {
+            yes: 10,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 12,
+          question: `Has your partner ever threatened to physically harm you or someone close to you? This can include pets.`,
+          points: {
+            yes: 10,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 13,
+          question: `Do you experience mental health issues? E.g. depression, anxiety.`,
+          points: {
+            yes: 1,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 14,
+          question: `Does your partner want to know where you are all the time?`,
+          points: {
+            yes: 1,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 15,
+          question: `Does your partner call or text you constantly, and get angry if you don’t respond?`,
+          points: {
+            yes: 1,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 16,
+          question: `Has your partner ever pressured you to do something sexual that you did not want to do?`,
+          points: {
+            yes: 10,
+            no: 0,
+            maybe: 0,
+          }
+        },
+        {
+          index: 17,
+          question: `Has your partner been violent on other occasions that did not involve you? For example, have they gotten into physical fights with other people?`,
+          points: {
+            yes: 5,
+            no: 0,
+            maybe: 0,
+          }
+        },
+      ]
     }
   }
 }

@@ -2,7 +2,7 @@
   <div class="root">
     <h1 class="title">{{ currentTitle }}</h1>
     <Paragraph :list="currentContent"/>
-    <div v-for="link in currentLinks" :key="link">
+    <div v-for="(link, index) in currentLinks" :key="index">
       <router-link :to="link.link">{{ link.title }}</router-link>
     </div>
   </div>
@@ -17,11 +17,27 @@ export default {
     Paragraph
   },
   mounted() {
-    if (this.$store.state.count <= 0) {
+    if (this.$store.state.total <= 0) {
       this.currentTitle = this.positiveTitle
       this.currentContent = this.positiveContent
       this.currentLinks.push(this.support)
       this.currentLinks.push(this.family)
+    }
+    else if (this.$store.state.total >= 1 && this.$store.state.total <= 4) {
+      this.currentTitle = this.warningTitle
+      this.currentContent = this.warningContent
+      this.currentLinks.push(this.family)
+    }
+    else if (this.$store.state.total >= 5 && this.$store.state.total <= 9) {
+      this.currentTitle = this.negativeTitle
+      this.currentContent = this.negativeContent
+      this.currentLinks.push(this.support)
+      this.currentLinks.push(this.family)
+    }
+    else if (this.$store.state.total >= 10) {
+      this.currentTitle = this.urgentTitle
+      this.currentContent = this.urgentContent
+      this.currentLinks.push(this.support)
     }
   },
   data() {

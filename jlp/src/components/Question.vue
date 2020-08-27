@@ -4,17 +4,17 @@
     <div class="block">
       <b-radio v-model="radio"
           :name="question"
-          native-value="0">
+          :native-value="yes">
           Yes
       </b-radio>
       <b-radio v-model="radio"
           :name="question"
-          native-value="2">
+          :native-value="no">
           No
       </b-radio>
       <b-radio v-model="radio"
           :name="question"
-          native-value="1">
+          :native-value="maybe">
           Maybe
       </b-radio>
     </div>
@@ -28,6 +28,9 @@ export default {
   props: {
     question: String,
     index: Number,
+    yes: Number,
+    no: Number,
+    maybe: Number,
   },
   watch: {
     radio() {
@@ -35,6 +38,7 @@ export default {
         index: this.index,
         num: Number(this.radio)
       }
+      console.log(this.$store.state.questions)
       this.$store.commit('setQuestion', payload)
     }
   },
