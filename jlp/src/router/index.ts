@@ -37,6 +37,11 @@ Vue.use(VueRouter)
     path: '/quiz',
     name: 'Quiz',
     component: () => import(/* webpackChunkName: "about" */ '../views/Quiz.vue')
+  },
+  {
+    path: '/result',
+    name: 'Result',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Result.vue')
   }
 ]
 

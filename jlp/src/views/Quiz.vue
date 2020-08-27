@@ -7,14 +7,14 @@
     </section>
     <div v-for="(question) in currentQuestions" :key="question">
       <div class="question">
-        <b>Question {{ questions.indexOf(question)+1 }})</b>
-        <Question :question="question" />
+        <b>Question {{ questions.indexOf(question)+1 }}</b>
+        <Question :question="question" :index="questions.indexOf(question)+1" />
       </div>
     </div>
     <div class="button-container">
       <b-button v-if="start > 6" type="is-light" v-on:click="prev()">Previous</b-button>
       <b-button v-if="start <= questions.length" type="is-primary" v-on:click="next()">Next</b-button>
-      <b-button v-if="start > questions.length" type="is-primary">Finish</b-button>
+      <b-button v-if="start > questions.length" type="is-light" v-on:click="finish()">Finish</b-button>
     </div>
   </div>
 </template>
@@ -24,7 +24,7 @@
 import Question from '@/components/Question.vue'
 
 export default {
-  name: 'About',
+  name: 'Quiz',
   components: {
     Question
   },
@@ -53,7 +53,7 @@ export default {
 
       this.index -= 1
       this.progress -= 33.33
-    }
+    },
   },
   data() {
     return {
