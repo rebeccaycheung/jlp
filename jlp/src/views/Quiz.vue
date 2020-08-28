@@ -41,7 +41,6 @@ export default {
   },
   mounted() {
     const quiz = this.$store.state.whichQuiz
-    console.log(quiz)
     switch (quiz) {
       case 0:
         this.questions = questionJson
@@ -65,6 +64,8 @@ export default {
 
       this.index += 1
       this.progress += 33.33
+
+      this.scrollToTop()
     },
     prev() {
       this.start = this.start - 6
@@ -75,6 +76,8 @@ export default {
 
       this.index -= 1
       this.progress -= 33.33
+
+      this.scrollToTop()
     },
     finish() {
       let total = 0
@@ -84,6 +87,9 @@ export default {
       }
       this.$store.commit('setTotal', total)
       this.$router.push({ path: 'result' })
+    },
+    scrollToTop() {
+      window.scrollTo(0, 0);
     }
   },
   data() {
