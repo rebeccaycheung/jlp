@@ -31,8 +31,9 @@ export default new Vuex.Store({
       state.total = value
     },
 
-    setQuestion(state, payload) {
-      state.questions[payload.index] = payload.num
+    setQuestion(state, payload: Record<string, any>) {
+      const index: number = payload.index
+      Object.assign(state.questions, payload)
     }
   },
   actions: {
@@ -40,3 +41,4 @@ export default new Vuex.Store({
   modules: {
   }
 })
+

@@ -18,8 +18,8 @@
       </div>
     </div>
     <div class="button-container">
-      <b-button v-if="start > 6" type="is-light" v-on:click="prev()">Previous</b-button>
-      <b-button v-if="start <= questions.length" type="is-primary" v-on:click="next()">Next</b-button>
+      <b-button v-if="start > 6" type="is-light" v-on:click="prev()" class="leftButton">Previous</b-button>
+      <b-button v-if="start <= questions.length" type="is-primary" v-on:click="next()" class="leftButton">Next</b-button>
       <b-button v-if="start > questions.length" type="is-primary" v-on:click="finish()">Finish</b-button>
     </div>
   </div>
@@ -244,8 +244,7 @@ export default {
   margin-bottom: 50px;
 }
 
-.button-container {
-  display: flex;
-  justify-content: space-between;
+.leftButton {
+  margin-right: 20px;
 }
 </style>

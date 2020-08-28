@@ -34,11 +34,10 @@ export default {
   },
   watch: {
     radio() {
+      const index = this.index
       const payload = {
-        index: this.index,
-        num: Number(this.radio)
+        [index]: Number(this.radio),
       }
-      console.log(this.$store.state.questions)
       this.$store.commit('setQuestion', payload)
     }
   },
