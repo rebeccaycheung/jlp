@@ -11,12 +11,12 @@
           </p>
           <div class="button-container">
             <router-link to="/quiz">
-              <b-button type="is-light" class="leftButton" v-on:click="onClick(0)">
+              <b-button type="is-light" class="button leftButton" v-on:click="onClick(0)">
                 {{ leftButton }}
               </b-button>
             </router-link>
             <router-link to="/quiz">
-              <b-button type="is-light" v-on:click="onClick(1)">
+              <b-button type="is-light" class="button" v-on:click="onClick(1)">
                 {{ rightButton }}
               </b-button>
             </router-link>
@@ -62,9 +62,17 @@ export default {
 <style scoped>
 .button-container {
   margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .leftButton {
   margin-right: 20px;
+}
+
+.button {
+  width: 200px;
+  margin-top: 10px;
 }
 </style>
