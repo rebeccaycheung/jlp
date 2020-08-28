@@ -14,6 +14,9 @@
           :yes="question.points.yes"
           :no="question.points.no"
           :maybe="question.points.maybe"
+          :yesText="question.text.yes"
+          :noText="question.text.no"
+          :maybeText="question.text.maybe"
         />
       </div>
     </div>

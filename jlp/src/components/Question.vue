@@ -1,21 +1,25 @@
 <template>
   <div>
-    {{ question }}
-    <div class="block">
+    <h5 class="title is-5">{{ question }}</h5>
+    <div class="field">
       <b-radio v-model="radio"
           :name="question"
           :native-value="yes">
-          Yes
+          {{ yesText }}
       </b-radio>
+    </div>
+    <div class="field">
       <b-radio v-model="radio"
           :name="question"
           :native-value="no">
-          No
+          {{ noText }}
       </b-radio>
+    </div>
+    <div class="field" v-if="maybeText">
       <b-radio v-model="radio"
           :name="question"
           :native-value="maybe">
-          Maybe
+          {{ maybeText }}
       </b-radio>
     </div>
   </div>
@@ -31,6 +35,9 @@ export default {
     yes: Number,
     no: Number,
     maybe: Number,
+    yesText: String,
+    noText: String,
+    maybeText: String,
   },
   watch: {
     radio() {
