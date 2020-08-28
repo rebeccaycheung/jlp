@@ -42,6 +42,11 @@ Vue.use(VueRouter)
     path: '/result',
     name: 'Result',
     component: () => import(/* webpackChunkName: "about" */ '../views/Result.vue')
+  },
+  {
+    path: '*',
+    name: 'NotFound',
+    component: () => import(/* webpackChunkName: "about" */ '../views/NotFound.vue')
   }
 ]
 
