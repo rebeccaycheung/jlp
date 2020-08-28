@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    whichQuiz: 0,
     total: 0,
     questions: {
       1: 0,
@@ -34,6 +35,10 @@ export default new Vuex.Store({
     setQuestion(state, payload: Record<string, any>) {
       const index: number = payload.index
       Object.assign(state.questions, payload)
+    },
+
+    setQuiz(state, value) {
+      state.whichQuiz = value
     }
   },
   actions: {

@@ -10,12 +10,16 @@
             {{ description }}
           </p>
           <div class="button-container">
-            <b-button type="is-light" class="leftButton">
-              <router-link to="/quiz">{{ leftButton }}</router-link>
-            </b-button>
-            <b-button type="is-light">
-              <router-link to="/quiz">{{ rightButton }}</router-link>
-            </b-button>
+            <router-link to="/quiz">
+              <b-button type="is-light" class="leftButton" v-on:click="onClick(0)">
+                {{ leftButton }}
+              </b-button>
+            </router-link>
+            <router-link to="/quiz">
+              <b-button type="is-light" v-on:click="onClick(1)">
+                {{ rightButton }}
+              </b-button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -28,7 +32,18 @@
 
 export default {
   name: 'Home',
-  components: {
+  methods: {
+    onClick(index) {
+      console.log(index)
+      switch (index) {
+        case 0:
+          this.$store.commit('setQuiz', 0)
+          break
+        case 1:
+          this.$store.commit('setQuiz', 1)
+          break
+      }
+    }
   },
   data() {
     return {

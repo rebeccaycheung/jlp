@@ -22,8 +22,8 @@
     </div>
     <div class="button-container">
       <b-button v-if="start > 6" type="is-light" v-on:click="prev()" class="leftButton">Previous</b-button>
-      <b-button v-if="start <= $options.questions.length" type="is-primary" v-on:click="next()" class="leftButton">Next</b-button>
-      <b-button v-if="start > $options.questions.length" type="is-primary" v-on:click="finish()">Finish</b-button>
+      <b-button v-if="start <= questions.length" type="is-primary" v-on:click="next()" class="leftButton">Next</b-button>
+      <b-button v-if="start > questions.length" type="is-primary" v-on:click="finish()">Finish</b-button>
     </div>
   </div>
 </template>
@@ -32,22 +32,33 @@
 // @ is an alias to /src
 import Question from '@/components/Question.vue'
 import questionJson from '@/json/quiz.json'
+import questionFriendJson from '@/json/quiz-friend.json'
 
 export default {
   name: 'Quiz',
   components: {
     Question
   },
-  questions: questionJson,
   mounted() {
-    this.currentQuestions = this.$options.questions.slice(this.start, this.end)
+    const quiz = this.$store.state.whichQuiz
+    console.log(quiz)
+    switch (quiz) {
+      case 0:
+        this.questions = questionJson
+        break
+      case 1:
+        this.questions = questionFriendJson
+        break
+    }
+
+    this.currentQuestions = this.questions.slice(this.start, this.end)
     this.start = this.start + 6
     this.end = this.start + 6
   },
   methods: {
     next() {
       this.prevQuestions = this.currentQuestions
-      this.currentQuestions = this.$options.questions.slice(this.start, this.end)
+      this.currentQuestions = this.questions.slice(this.start, this.end)
 
       this.start = this.start + 6
       this.end = this.start + 6
@@ -60,7 +71,7 @@ export default {
       this.end = this.start + 6
 
       this.currentQuestions = this.prevQuestions
-      this.prevQuestions = this.$options.questions.slice(this.start-12, this.end-12)
+      this.prevQuestions = this.questions.slice(this.start-12, this.end-12)
 
       this.index -= 1
       this.progress -= 33.33
@@ -77,12 +88,14 @@ export default {
   },
   data() {
     return {
+      prevRoute: null,
       progress: 33.33,
       index: 1,
       start: 0,
       end: 6,
       currentQuestions: [],
       prevQuestions: [],
+      questions: questionJson,
     }
   }
 }
