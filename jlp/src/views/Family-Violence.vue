@@ -1,38 +1,42 @@
 <template>
   <div class="root">
-    <h1 class="title">{{ title }}</h1>
-    <Paragraph :list="content"/>
-    <UnorderedList :list="list1"/>
-    <Paragraph :list="content1"/>
-    <UnorderedList :list="list2"/>
-    <Paragraph :list="content2"/>
-    <UnorderedList :list="list3"/>
-    <Paragraph :list="content3"/>
-    <div class="links">
-      <p>
-        <a href="https://www.whiteribbon.org.au/">https://www.whiteribbon.org.au/</a>
-      </p>
-      <p>
-        <a href="http://www.dvrcv.org.au/">http://www.dvrcv.org.au/</a>
-      </p>
-      <p>
-        <a href="https://www.1800respect.org.au/help-and-support/">https://www.1800respect.org.au/help-and-support/</a>
-      </p>
-      <p>
-        <a href="https://www.safesteps.org.au/understanding-family-violence/what-is-family-violence/">https://www.safesteps.org.au/understanding-family-violence/what-is-family-violence/</a>
-      </p>
-    </div>
-    <h1 class="title">
-      {{ title1 }}
-    </h1>
-    <Paragraph :list="content4"/>
-    <UnorderedList :list="list4"/>
-    <Paragraph :list="content5"/>
-    <UnorderedList :list="list5"/>
-    <h1 class="title">
-      {{ title2 }}
-    </h1>
-    <Paragraph :list="content6"/>
+    <h1 class="title">What is family violence?</h1>
+    <section>
+      <b-tabs class="block">
+        <b-tab-item :label="title">
+          <Paragraph :list="content"/>
+          <UnorderedList :list="list1"/>
+          <Paragraph :list="content1"/>
+          <UnorderedList :list="list2"/>
+          <Paragraph :list="content2"/>
+          <UnorderedList :list="list3"/>
+          <Paragraph :list="content3"/>
+          <div class="links">
+            <p>
+              <a href="https://www.whiteribbon.org.au/">https://www.whiteribbon.org.au/</a>
+            </p>
+            <p>
+              <a href="http://www.dvrcv.org.au/">http://www.dvrcv.org.au/</a>
+            </p>
+            <p>
+              <a href="https://www.1800respect.org.au/help-and-support/">https://www.1800respect.org.au/help-and-support/</a>
+            </p>
+            <p>
+              <a href="https://www.safesteps.org.au/understanding-family-violence/what-is-family-violence/">https://www.safesteps.org.au/understanding-family-violence/what-is-family-violence/</a>
+            </p>
+          </div>
+        </b-tab-item>
+        <b-tab-item :label="title1">
+          <Paragraph :list="content4"/>
+          <UnorderedList :list="list4"/>
+          <Paragraph :list="content5"/>
+          <UnorderedList :list="list5"/>
+        </b-tab-item>
+        <b-tab-item :label="title2">
+          <Paragraph :list="content6"/>
+        </b-tab-item>
+      </b-tabs>
+    </section>
   </div>
 </template>
 

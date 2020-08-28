@@ -1,20 +1,30 @@
 <template>
   <div class="root">
-    <h1 class="title">{{ t1 }}</h1>
-    <Paragraph :list="p1"/>
-    <h1 class="title">{{ t2 }}</h1>
-    <Paragraph :list="p2"/>
-    <UnorderedList :list="l1"/>
-    <Paragraph :list="p3"/>
-    <UnorderedList :list="l2"/>
-    <h1 class="title">{{ t3 }}</h1>
-    <Paragraph :list="p4"/>
-    <h1 class="title">{{ t4 }}</h1>
-    <Paragraph :list="p5"/>
-    <h1 class="title">{{ t5 }}</h1>
-    <Paragraph :list="p6"/>
-    <UnorderedList :list="l3"/>
-    <Paragraph :list="p7"/>
+    <h1 class="title">Where can I get help?</h1>
+    <section>
+      <b-tabs class="block">
+        <b-tab-item :label="t1">
+          <Paragraph :list="p1"/>
+        </b-tab-item>
+        <b-tab-item :label="t2">
+          <Paragraph :list="p2"/>
+          <UnorderedList :list="l1"/>
+          <Paragraph :list="p3"/>
+          <UnorderedList :list="l2"/>
+        </b-tab-item>
+        <b-tab-item :label="t3">
+          <Paragraph :list="p4"/>
+        </b-tab-item>
+        <b-tab-item :label="t4">
+          <Paragraph :list="p5"/>
+        </b-tab-item>
+        <b-tab-item :label="t5">
+          <Paragraph :list="p6"/>
+          <UnorderedList :list="l3"/>
+          <Paragraph :list="p7"/>
+        </b-tab-item>
+      </b-tabs>
+    </section>
   </div>
 </template>
 

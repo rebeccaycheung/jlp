@@ -1,13 +1,22 @@
 <template>
   <div class="root">
-    <h1 class="title">{{ t1 }}</h1>
-    <Paragraph :list="p1"/>
-    <h1 class="title">{{ t2 }}</h1>
-    <Paragraph :list="p2"/>
-    <h1 class="title">{{ t3 }}</h1>
-    <UnorderedList :list="l1"/>
-    <h1 class="title">{{ t4 }}</h1>
-    <UnorderedList :list="l2"/>
+    <h1 class="title">How to support a friend?</h1>
+    <section>
+      <b-tabs class="block">
+        <b-tab-item :label="t1">
+          <Paragraph :list="p1"/>
+        </b-tab-item>
+        <b-tab-item :label="t2">
+          <Paragraph :list="p2"/>
+        </b-tab-item>
+        <b-tab-item :label="t3">
+          <UnorderedList :list="l1"/>
+        </b-tab-item>
+        <b-tab-item :label="t4">
+          <UnorderedList :list="l2"/>
+        </b-tab-item>
+      </b-tabs>
+    </section>
   </div>
 </template>
 
