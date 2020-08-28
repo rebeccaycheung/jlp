@@ -29,7 +29,7 @@
     },
     {
         "index": 3,
-        "question": "Does your partner act jealous or obsessive over you?",
+        "question": "Does your partner act jealously or obsessively over you?",
         "points": {
             "yes": 5,
             "no": 0,
@@ -57,7 +57,7 @@
     },
     {
         "index": 5,
-        "question": "Does your partner experience mental health issues? E.g. depression, anxiety.",
+        "question": "Does your partner experience mental health issues? e.g. depression, anxiety.",
         "points": {
             "yes": 1,
             "no": 0,
@@ -155,7 +155,7 @@
     },
     {
         "index": 12,
-        "question": "Has your partner ever threatened to physically harm you or someone close to you? This can include pets.",
+        "question": "Has your partner ever threatened to physically harm you or someone close to you? (This may include pets)",
         "points": {
             "yes": 10,
             "no": 0,
@@ -169,7 +169,7 @@
     },
     {
         "index": 13,
-        "question": "Do you experience mental health issues? E.g. depression, anxiety.",
+        "question": "Do you experience mental health issues, such as depression or anxiety?",
         "points": {
             "yes": 1,
             "no": 0,
@@ -183,7 +183,7 @@
     },
     {
         "index": 14,
-        "question": "Does your partner want to know where you are all the time?",
+        "question": "Does your partner want to know where you are at all times?",
         "points": {
             "yes": 1,
             "no": 0,
@@ -197,7 +197,7 @@
     },
     {
         "index": 15,
-        "question": "Does your partner call or text you constantly, and get angry if you don’t respond?",
+        "question": "Does your partner call/text you constantly, and get angry if you do not respond?",
         "points": {
             "yes": 1,
             "no": 0,
@@ -225,7 +225,7 @@
     },
     {
         "index": 17,
-        "question": "Has your partner been violent on other occasions that did not involve you? For example, have they gotten into physical fights with other people?",
+        "question": "Has your partner been violent in situations that did not involve you? e.g. getting into physical fights with other people?",
         "points": {
             "yes": 5,
             "no": 0,

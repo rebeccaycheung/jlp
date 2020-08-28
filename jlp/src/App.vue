@@ -9,16 +9,16 @@
         </template>
         <template slot="start">
             <b-navbar-item>
-                <router-link to="/quiz">Do the quiz</router-link>
+                <router-link to="/quiz">Quiz</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/help">Where can I get help</router-link>
+                <router-link to="/help">Getting help</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/family-violence">What is family violence?</router-link>
+                <router-link to="/family-violence">Family violence</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/support">How to support a friend?</router-link>
+                <router-link to="/support">Supporing a friend</router-link>
             </b-navbar-item>
             <b-navbar-item>
                 <router-link to="/about">About us</router-link>

@@ -9,6 +9,9 @@
           <p>
             {{ description }}
           </p>
+          <p>
+            {{ desc }}
+          </p>
           <div class="button-container">
             <router-link to="/quiz">
               <b-button type="is-light" class="button leftButton" v-on:click="onClick(0)">
@@ -50,8 +53,8 @@ export default {
       title: `What is the quiz?`,
       description: `This tool was created to help identify some signs of an unhealthy relationship.
                     Often, these can be the precursors to abusive situations. The questions are most
-                    helpful when answered honestly. No record is kept of your responses. The quiz
-                    should take roughly 5-10 minutes to complete.`,
+                    helpful when answered honestly. If you do not know the answer to a question, click 'No'.`,
+      desc: `No record is kept of your responses. The quiz should take roughly 5-10 minutes to complete.`,
       leftButton: `Take the quiz for yourself`,
       rightButton: `Take the quiz for a friend`
     }
