@@ -33,7 +33,6 @@ export default new Vuex.Store({
     },
 
     setQuestion(state, payload: Record<string, any>) {
-      const index: number = payload.index
       Object.assign(state.questions, payload)
     },
 
