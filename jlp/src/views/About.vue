@@ -2,6 +2,17 @@
   <div class="root">
     <h1 class="title">{{ title }}</h1>
     <Paragraph :list="content"/>
+    <div class="social">
+      <a href="">
+        <font-awesome-icon :icon="['fab', 'twitter']" class="fa fa-2x" style="color: #00acee"/>
+      </a>
+      <a href="">
+        <font-awesome-icon :icon="['fab', 'facebook']" class="fa fa-2x" style="color: #3b5998"/>
+      </a>
+      <a href="">
+        <font-awesome-icon :icon="['fab', 'instagram']" class="fa fa-2x" style="color: #dd2a7b"/>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -31,3 +42,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.social {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social a {
+  padding: 10px;
+}
+</style>
