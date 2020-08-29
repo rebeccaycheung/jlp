@@ -113,7 +113,7 @@
     },
     {
         "index": 9,
-        "question": "Have you recently been pregnant or given birth?",
+        "question": "Does your partner regularly use drugs or alcohol? e.g. more than three times a week",
         "points": {
             "yes": 1,
             "no": 0,
