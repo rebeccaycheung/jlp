@@ -3,15 +3,15 @@
     <section class="hero is-primary is-fullheight-with-navbar is-bold">
       <div class="hero-body">
         <div class="container">
-          <p class="title">
+          <h1 class="title is-1">
             {{ title }}
-          </p>
-          <p>
+          </h1>
+          <div class="subtitle">
             {{ description }}
-          </p>
-          <p>
+          </div>
+          <div class="subtitle">
             {{ desc }}
-          </p>
+          </div>
           <div class="button-container">
             <router-link to="/quiz">
               <b-button type="is-light" class="button leftButton" v-on:click="onClick(0)">
