@@ -2,9 +2,19 @@
   <div class="root">
     <h1 class="title">{{ currentTitle }}</h1>
     <Paragraph :list="currentContent"/>
-    <div v-for="(link, index) in currentLinks" :key="index">
+    <div v-for="(link, index) in currentLinks" :key="index" class="link">
+      <span v-if="link.description">{{ link.description }} </span>
       <router-link :to="link.link">{{ link.title }}</router-link>
     </div>
+    <b-message type="is-warning" class="disclaimer">
+      <div class="disclaimer-message">
+        <font-awesome-icon icon="exclamation-triangle" class="icon"/>
+        <div class="content">
+          <p><b>Disclaimer</b></p>
+          {{ disclaimer }}
+        </div>
+      </div>
+    </b-message>
   </div>
 </template>
 
@@ -31,13 +41,13 @@ export default {
     else if (this.$store.state.total >= 5 && this.$store.state.total <= 9) {
       this.currentTitle = this.negativeTitle
       this.currentContent = this.negativeContent
-      this.currentLinks.push(this.support)
       this.currentLinks.push(this.family)
+      this.currentLinks.push(this.help)
     }
     else if (this.$store.state.total >= 10) {
       this.currentTitle = this.urgentTitle
       this.currentContent = this.urgentContent
-      this.currentLinks.push(this.support)
+      this.currentLinks.push(this.help)
     }
   },
   data() {
@@ -47,16 +57,20 @@ export default {
       currentLinks: [],
       family: {
         link: '/family-violence',
-        title: 'Family violence'
+        title: 'Family violence',
+        description: 'To find out more about family violence, you can check out this page:'
       },
       support: {
         link: '/support',
-        title: 'How to support a friend'
+        title: 'Supporting a friend',
+        description: 'To find out more about how to support a friend, you can check out this page:'
       },
       help: {
         link: '/help',
-        title: 'Support services'
+        title: 'Getting help',
+        description: 'If you or someone else is in danger, do not wait: please call the police for help on 000 immediately.'
       },
+      disclaimer: 'This quiz is for educational purposes only and may not be conclusive in respect to your personal circumstances.',
       positiveTitle: `This quiz does not detect any signs of an unhealthy relationship`,
       positiveContent: [
           `It sounds like your relationship is on the right track! Healthy relationships don’t just happen. They
@@ -88,3 +102,23 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.disclaimer {
+  margin-top: 50px;
+}
+
+.disclaimer-message {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.link {
+  margin-top: 20px;
+}
+</style>
