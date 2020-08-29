@@ -27,7 +27,7 @@
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-primary" href="https://google.com">
+                    <a class="button is-danger" href="https://google.com">
                         <strong>Exit</strong>
                     </a>
                 </div>

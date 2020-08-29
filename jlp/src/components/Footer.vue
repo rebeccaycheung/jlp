@@ -9,7 +9,6 @@
         <img src="@/assets/logo.png" />
         <img src="@/assets/diversit.png" />
       </p>
-      <p>Check it out on <a href="https://github.com/rebeccaycheung/jlp/blob/master">Github</a></p>
     </div>
   </footer>
 </template>
@@ -28,5 +27,6 @@ img {
 
 .footer {
   font-size: 12px;
+  padding-bottom: 50px;
 }
 </style>
