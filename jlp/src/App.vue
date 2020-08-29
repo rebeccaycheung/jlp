@@ -18,7 +18,7 @@
                 <router-link to="/family-violence">Family violence</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/support">Supporing a friend</router-link>
+                <router-link to="/support">Supporting a friend</router-link>
             </b-navbar-item>
             <b-navbar-item>
                 <router-link to="/about">About us</router-link>
