@@ -32,7 +32,7 @@ export default {
   and access to information for young adults. This website aims to help young adults identify the signs of family 
   violence in their own, and friends’, relationships. It offers holistic advice about the options available to them 
   at early stages of family violence.`,
-    `The Just Leadership Program is an initiative of the Monash LSS Social Justice & Equity portfolio.
+    `This project started with the Just Leadership Program, an initiative of the Monash Law Students’ Society Social Justice and Equity portfolio.
   This program affords students an opportunity to learn from high profile speakers associated with social justice 
   in the law. As the Women’s Rights group, we were responsible for creating a project that would further gender equity.`,
   ],
