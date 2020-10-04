@@ -17,6 +17,7 @@
           :yesText="question.text.yes"
           :noText="question.text.no"
           :maybeText="question.text.maybe"
+          :popUp="question.popUp"
         />
       </div>
     </div>

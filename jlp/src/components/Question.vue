@@ -1,6 +1,16 @@
 <template>
   <div>
-    <h5 class="title is-5">{{ question }}</h5>
+    <div class="question-container">
+      <h5 class="title is-5">{{ question }}</h5>
+      <div v-if="popUp">
+        <font-awesome-icon icon="question-circle" class="fa fa-2x" v-on:click="showPopUp" style="cursor: pointer"/>
+        <div v-if="!isHidden">
+          <b-message type="is-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+          </b-message>
+        </div>
+      </div>
+    </div>
     <div class="field">
       <b-radio v-model="radio"
           :name="question"
@@ -38,6 +48,7 @@ export default {
     yesText: String,
     noText: String,
     maybeText: String,
+    popUp: String,
   },
   watch: {
     radio() {
@@ -50,8 +61,26 @@ export default {
   },
   data() {
     return {
-      radio: null
+      radio: null,
+      isHidden: true,
     }
   },
+  methods: {
+    showPopUp() {
+      if (this.isHidden) {
+        this.isHidden = false
+      } else {
+        this.isHidden = true
+      }
+    },
+  }
 }
 </script>
+
+<style scoped>
+.question-container {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+}
+</style>
