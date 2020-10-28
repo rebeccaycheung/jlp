@@ -4,18 +4,22 @@
     <section>
       <b-tabs class="block">
         <b-tab-item :label="$options.title1">
-          <Paragraph :list="$options.content1"/>
+            <img src="@/assets/iphone.png" style="float: left"/>
+            <Paragraph :list="$options.content1"/>
         </b-tab-item>
         <b-tab-item :label="$options.title2">
+          <img src="@/assets/customer_service.png" style="float: right"/>
           <Paragraph :list="$options.content2"/>
           <UnorderedList :list="$options.list1"/>
           <Paragraph :list="$options.content3"/>
           <UnorderedList :list="$options.list2"/>
         </b-tab-item>
         <b-tab-item :label="$options.title3">
+          <img src="@/assets/health.png" style="float: left"/>
           <Paragraph :list="$options.content4"/>
         </b-tab-item>
         <b-tab-item :label="$options.title4">
+          <img src="@/assets/lawyer.png" style="float: right"/>
           <Paragraph :list="$options.content5"/>
         </b-tab-item>
         <b-tab-item :label="$options.title5">
@@ -125,3 +129,10 @@ export default {
   ]
 }
 </script>
+
+<style scoped>
+img {
+  width: 200px;
+  padding: 20px;
+}
+</style>
