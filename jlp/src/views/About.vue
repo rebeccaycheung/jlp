@@ -3,13 +3,13 @@
     <h1 class="title">{{ $options.title }}</h1>
     <Paragraph :list="$options.content"/>
     <div class="social">
-      <a href="">
+      <a href="https://twitter.com/empoweringrela1">
         <font-awesome-icon :icon="['fab', 'twitter']" class="fa fa-2x" style="color: #00acee"/>
       </a>
-      <a href="">
+      <a href="https://www.facebook.com/Empowering-Relationships-111682207330212/">
         <font-awesome-icon :icon="['fab', 'facebook']" class="fa fa-2x" style="color: #3b5998"/>
       </a>
-      <a href="">
+      <a href="https://www.instagram.com/empoweringrelationships/">
         <font-awesome-icon :icon="['fab', 'instagram']" class="fa fa-2x" style="color: #dd2a7b"/>
       </a>
     </div>

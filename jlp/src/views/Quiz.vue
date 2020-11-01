@@ -11,12 +11,12 @@
         <Question
           :question="question.question"
           :index="question.index"
-          :yes="question.points.yes"
-          :no="question.points.no"
-          :maybe="question.points.maybe"
-          :yesText="question.text.yes"
-          :noText="question.text.no"
-          :maybeText="question.text.maybe"
+          :yes="question.points[1]"
+          :no="question.points[2]"
+          :maybe="question.points[3]"
+          :yesText="question.text[1]"
+          :noText="question.text[2]"
+          :maybeText="question.text[3]"
           :popUp="question.popUp"
         />
       </div>

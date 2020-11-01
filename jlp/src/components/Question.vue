@@ -2,7 +2,7 @@
   <div>
     <div class="question-container">
       <h5 class="title is-5">{{ question }}</h5>
-      <div v-if="popUp">
+      <div v-if="popUp" class="popUp">
         <font-awesome-icon icon="question-circle" class="fa fa-2x" v-on:click="showPopUp" style="cursor: pointer"/>
         <div v-if="!isHidden">
           <b-message type="is-info">
@@ -82,5 +82,10 @@ export default {
   display: flex;
   align-content: center;
   justify-items: center;
+  margin-bottom: 10px;
+}
+
+.popUp {
+  margin-left: 10px;
 }
 </style>
