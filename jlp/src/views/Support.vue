@@ -4,6 +4,7 @@
     <section>
       <b-tabs class="block">
         <b-tab-item :label="$options.title1">
+          <img src="@/assets/conversation.png" style="float: right"/>
           <Paragraph :list="$options.content1"/>
         </b-tab-item>
         <b-tab-item :label="$options.title2">
@@ -80,3 +81,10 @@ export default {
   ]
 }
 </script>
+
+<style scoped>
+img {
+  width: 200px;
+  padding: 20px;
+}
+</style>

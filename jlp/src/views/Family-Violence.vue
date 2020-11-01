@@ -4,6 +4,7 @@
     <section>
       <b-tabs class="block">
         <b-tab-item :label="$options.title">
+          <img src="@/assets/question.png" style="float: right"/>
           <Paragraph :list="$options.content"/>
           <UnorderedList :list="$options.list1"/>
           <Paragraph :list="$options.content1"/>
@@ -144,5 +145,10 @@ export default {
 <style scoped>
 .links {
   margin-bottom: 50px;
+}
+
+img {
+  width: 200px;
+  padding: 20px;
 }
 </style>
