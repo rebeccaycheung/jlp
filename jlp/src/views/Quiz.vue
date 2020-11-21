@@ -32,8 +32,7 @@
 <script>
 // @ is an alias to /src
 import Question from '@/components/Question.vue'
-import questionJson from '@/json/quiz.json'
-import questionFriendJson from '@/json/quiz-friend.json'
+import { contentLabels } from '@/json/content-labels'
 
 export default {
   name: 'Quiz',
@@ -44,10 +43,10 @@ export default {
     const quiz = this.$store.state.whichQuiz
     switch (quiz) {
       case 0:
-        this.questions = questionJson
+        this.questions = contentLabels.quiz
         break
       case 1:
-        this.questions = questionFriendJson
+        this.questions = contentLabels.quizFriend
         break
     }
 
@@ -102,7 +101,7 @@ export default {
       end: 6,
       currentQuestions: [],
       prevQuestions: [],
-      questions: questionJson,
+      questions: contentLabels.quiz,
     }
   }
 }
