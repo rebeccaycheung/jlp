@@ -285,7 +285,6 @@ export const contentLabels = {
                 "2": "I have some close relationships with friends or family",
                 "3": "No, I have no close relationships with friends or family"
             },
-            "popUp": "this is a test pop up"
         },
         {
             "index": 2,
@@ -370,7 +369,8 @@ export const contentLabels = {
                 "1": "No",
                 "2": "Yes",
                 "maybe": null
-            }
+            },
+            "popUp": "17% of women who experience family violence experience violence for the first time when they fell pregnant."
         },
         {
             "index": 8,
@@ -426,7 +426,8 @@ export const contentLabels = {
                 "1": "No, my partner does not do this",
                 "2": "My partner sometimes does this",
                 "3": "Yes, my partner often does this"
-            }
+            },
+            "popUp": "One in five women had experienced violence from a current or previous partner since the age of 15"
         },
         {
             "index": 12,
@@ -440,7 +441,8 @@ export const contentLabels = {
                 "1": "No, my partner does not do this",
                 "2": "My partner sometimes does this",
                 "3": "Yes, my partner often does this"
-            }
+            },
+            "popUp": "More than one in three Australian women have experienced violence"
         },
         {
             "index": 13,
@@ -454,7 +456,8 @@ export const contentLabels = {
                 "1": "Never",
                 "2": "Sometimes",
                 "3": "Yes, I do"
-            }
+            },
+            "popUp": "In 2015, intimate partner violence contributed to 12% of the burden of anxiety disorders in females"
         },
         {
             "index": 14,
@@ -612,7 +615,8 @@ export const contentLabels = {
                 "1": "No",
                 "2": "Yes",
                 "maybe": null
-            }
+            },
+            "popUp": "17% of women who experience family violence experience violence for the first time when they fell pregnant."
         },
         {
             "index": 8,
@@ -668,7 +672,8 @@ export const contentLabels = {
                 "1": "No, my friend’s partner does not do this",
                 "2": "My friend’s partner sometimes does this",
                 "3": "Yes, my friend’s partner often does this"
-            }
+            },
+            "popUp": "One in five women had experienced violence from a current or previous partner since the age of 15"
         },
         {
             "index": 12,
@@ -682,7 +687,8 @@ export const contentLabels = {
                 "1": "No, my friend’s partner does not do this",
                 "2": "My friend’s partner sometimes does this",
                 "3": "Yes, my friend’s partner often does this"
-            }
+            },
+            "popUp": "More than one in three Australian women have experienced violence"
         },
         {
             "index": 13,
@@ -696,7 +702,8 @@ export const contentLabels = {
                 "1": "Never",
                 "2": "Sometimes",
                 "3": "Yes, I do"
-            }
+            },
+            "popUp": "In 2015, intimate partner violence contributed to 12% of the burden of anxiety disorders in females"
         },
         {
             "index": 14,

@@ -30,7 +30,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import Question from '@/components/Question.vue'
 import { contentLabels } from '@/json/content-labels'
 
