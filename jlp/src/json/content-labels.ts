@@ -233,7 +233,7 @@ export const contentLabels = {
             ],
         },
         conversation: {
-            title: `If they don’t feel comfortable with the conversation:`,
+            title: `If they don’t feel comfortable with the conversation`,
             content: [
                 `Don’t push the conversation too hard`,
                 `Maintain your friendship and connection`,
@@ -530,7 +530,6 @@ export const contentLabels = {
                 "2": "My friend have some close relationships with friends or family",
                 "3": "No, my friend have no close relationships with friends or family"
             },
-            "popUp": "this is a test pop up"
         },
         {
             "index": 2,
