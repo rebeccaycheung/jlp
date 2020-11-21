@@ -65,7 +65,7 @@ export default {
   },
   data() {
     return {
-      radio: null,
+      radio: this.$store.getters['getAnswer'](this.index),
       isHidden: true,
     }
   },

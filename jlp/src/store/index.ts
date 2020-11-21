@@ -27,6 +27,12 @@ export default new Vuex.Store({
       17: null,
     }
   },
+  getters: {
+    getAnswer: (state) => (index: number) => {
+      const values = Object.values(state.questions)
+      return values[index-1]
+    }
+  },
   mutations: {
     setTotal(state, value) {
       state.total = value
@@ -45,4 +51,3 @@ export default new Vuex.Store({
   modules: {
   }
 })
-
