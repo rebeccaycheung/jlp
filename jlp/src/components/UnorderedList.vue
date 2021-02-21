@@ -1,8 +1,13 @@
 <template>
   <ul>
-    <li v-for="item in list" :key="item">
+    <div v-for="item in list" :key="item">
+      <li v-if="item.includes('http')">
+        <a :href="item">{{ item }}</a>
+      </li>
+      <li v-else>
         {{ item }}
-    </li>
+      </li>
+    </div>
   </ul>
 </template>
 

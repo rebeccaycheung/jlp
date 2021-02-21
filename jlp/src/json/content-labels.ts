@@ -24,10 +24,10 @@ export const contentLabels = {
             specialist: {
                 content: [`A number of specialist support services exist which can provide services such as:`],
                 list: [
-                    'Working with Police and Court Support - link to EDVOS and other agencies',
+                    'Working with Police and Court Support - visit EDVOS (http://www.edvos.org.au/) for more details',
                     'Housing assistance',
                     'Family violence and pregnancy',
-                    'Counselling and support groups - Call Safe Steps on 1800 015 188',
+                    'Counselling and support groups - call Safe Steps on 1800 015 188',
                     'Family violence and animal abuse',
                     'Men’s intake and referrals'
                 ],
@@ -36,27 +36,27 @@ export const contentLabels = {
                 content: [`To protect those suffering from family violence, there are a number of specialist government services available including:`],
                 list: [
                     `Safe steps Family Violence Response Centre which provides confidential support and information for women and children living with 
-                    family violence. https://www.safesteps.org.au/`,
-                    `Men’s Referral Service which is an anonymous and confidential telephone service for men. https://www.ntv.org.au/`,
+                    family violence (https://www.safesteps.org.au/)`,
+                    `Men’s Referral Service which is an anonymous and confidential telephone service for men (https://www.ntv.org.au/)`,
                     `The Orange Door - which is a collection of hubs which is a free service for adults, children and young people who are experiencing or have 
-                    experienced family violence. https://orangedoor.vic.gov.au/`
+                    experienced family violence (https://orangedoor.vic.gov.au/)`
                 ],
             }
         },
         counselling: {
             title: `Counselling and support`,
             content: [
-                `1800RESPECT (1800 737 732)
-                A 24 hour national sexual assault, family and domestic violence counselling line for any Australian who has experienced, or is at risk of, family and 
+                `1800RESPECT (1800 737 732):
+                A 24-hour national sexual assault, family and domestic violence counselling line for any Australian who has experienced, or is at risk of, family and 
                 domestic violence and/or sexual assault.`,
-                `LIFELINE (13 11 14)
+                `LIFELINE (13 11 14):
                 A national number that can help put you in contact with a crisis service in your state, available to anyone experiencing a personal crisis or 
                 thinking about suicide.`,
-                `RELATIONSHIPS AUSTRALIA (1300 364 277)
-                Provides support groups and counselling on relationships, and for abusive and abused partners.`,
-                `ABORIGINAL FAMILY DOMESTIC VIOLENCE HOTLINE (1800 019 123)
+                `RELATIONSHIPS AUSTRALIA (1300 364 277):
+                Provides support groups and counselling on relationships, and for both abusive and abused partners.`,
+                `ABORIGINAL FAMILY DOMESTIC VIOLENCE HOTLINE (1800 019 123):
                 Provides support for Aboriginal victims of crime who would like information on their rights, how to access counselling and financial assistance.`,
-                `TRANSLATING & INTERPRETING SERVICE (131 450)
+                `TRANSLATING & INTERPRETING SERVICE (131 450):
                 Provides free access to a telephone or on-site interpreter in your own language, available 24 hours, every day of the year.`
             ],
         },
@@ -65,8 +65,7 @@ export const contentLabels = {
             content: [
                 `While it is normal to feel nervous about seeking support, these services will help you understand if you feel nervous and can help you feel comfortable talking to them.`,
                 `Remember: you have a right to get support and help. The abuse is not your fault.`,
-                `Victorian Legal Aid`,
-                `Phone 1300 792 387, Monday to Friday from 8am to 6pm.`,
+                `Victorian Legal Aid: Phone 1300 792 387, Monday to Friday from 8am to 6pm.`,
                 `You can call Victorian Legal Aid for free information about family violence intervention orders and how they can help you. 
                 If they can’t help you directly, they will refer you to other organisations that can.`,
                 `Your local community legal service may be able to give you legal information and advice, and potentially also advice and 
@@ -93,13 +92,12 @@ export const contentLabels = {
             ],
             content: [
                 `You can apply for an intervention order to protect you here:`,
-                `https://www.mcv.vic.gov.au/form-finder/application-family-violence-intervention-order-fvio1.`,
+                `https://www.mcv.vic.gov.au/form-finder/application-family-violence-intervention-order-fvio1`,
                 `It is always a good idea to get legal advice before applying.`,
                 `If an intervention order is broken, the police can arrest them and charge them with a criminal offence. 
                 This could result in a criminal record and penalties such as jail time or fines. These orders are enforceable 
                 anywhere in Australia. In an emergency, please call 000.`,
-                `Reporting a breach of an IVO`,
-                `Keep a diary of every breach, writing down dates, times and exactly what happened and what was said. Further, 
+                `In order to report a breach of an IVO, keep a diary of every breach, writing down dates, times and exactly what happened and what was said. Further, 
                 no breach of an IVO condition is too small for police to act on a report that the IVO conditions have been broken. 
                 When you report a breach, the police will take a signed statement, interview the respondent and any witnesses before
                 deciding whether to make any charges.`
@@ -134,8 +132,8 @@ export const contentLabels = {
             list2: [
                 'It is the leading contributor to preventable death, disability and illness in Victorian women aged 15 to 44',
                 'It results in at least one woman being admitted to hospital every three hours',
-                'One in five women had experienced violence from a current or previous partner since the age of 15',
-                'In 2015 intimate partner violence contributed 41% of homicide & violence burden, 19% each of suicide & self-inflicted injuries and depressive disorders burden and 18% of early pregnancy loss burden'
+                'One in five women have experienced violence from a current or previous partner since the age of 15',
+                'In 2015, intimate partner violence contributed to 41% of all homicides and violent encounters, 19% of suicides, self-inflicted injuries and depressive disorders, and 18% of early pregnancy loss burdens'
             ],
             content2: [
                 `The psychological and social effects of family violence can include:`
@@ -163,20 +161,20 @@ export const contentLabels = {
         say: {
             title: `What does the law say?`,
             content: [
-                `Under the Victorian government Family Violence Protection Act 2008, family violence is defined as:
+                `Under the Victorian government Family Violence Protection Act 2008, family violence is defined as
                 (a) behaviour by a person towards a family member of that person if that behaviour`
             ],
             list: [
-                'Is physically or sexually abusive or',
-                'Is emotionally or psychologically abusive or',
-                'Is economically abusive or',
-                'Is threatening or',
-                'Is coercive or',
+                'Is physically or sexually abusive; or',
+                'Is emotionally or psychologically abusive; or',
+                'Is economically abusive; or',
+                'Is threatening; or',
+                'Is coercive; or',
                 `In any other way controls or dominates the family member and causes that family member to feel fear for the safety 
                 or wellbeing of that family member or another person`
             ],
             content1: [
-                `Or (b) behaviour by a person that causes a child to hear or witness, or otherwise be exposed to the effects of, 
+                `Or (b), behaviour by a person that causes a child to hear or witness, or otherwise be exposed to the effects of, 
                 behaviour referred to in paragraph (a).`,
                 `The Victorian government recognises that:`
             ],
@@ -189,15 +187,20 @@ export const contentLabels = {
         definitions: {
             title: `Definitions`,
             content: [
-                `Intimate partner abuse: violent behaviour used by a current or former spouse or partner against the 
+                `Intimate Partner Abuse:`,
+                `Violent behaviour used by a current or former spouse or partner against the 
                 other spouse or partner.`,
-                `Dating abuse: violent behaviour used by a casual partner against the other partner.`,
-                `Child abuse: violent behaviour or mistreatment towards a child or young person by a parent or caregiver. 
+                `Dating Abuse:`,
+                `Violent behaviour used by a casual partner against the other partner.`,
+                `Child Abuse:`,
+                `Violent behaviour or mistreatment towards a child or young person by a parent or caregiver. 
                 Under Victorian law, exposing a child to any form of family violence is also a reportable child abuse offence – 
                 so if a person is abusive towards their spouse in front of their child or children, child abuse has occurred.`,
-                `Elder abuse: violent behaviour or mistreatment towards an older person by a partner or family member, often including financial abuse, 
+                `Elder Abuse:`,
+                `Violent behaviour or mistreatment towards an older person by a partner or family member, often including financial abuse, 
                 controlling behaviours and/or negligence.`,
-                `Parental abuse: violent behaviour towards a parent by an adolescent child or dependant.`
+                `Parental Abuse:`,
+                `Violent behaviour towards a parent by an adolescent child or dependant.`
             ]
         }
     },
@@ -242,7 +245,7 @@ export const contentLabels = {
                 `Affirm that they are a good and valuable person`,
                 `Tell them that you’re concerned for their safety and want to help`,
                 `Help your friend recognize that the abuse is not “normal” and is NOT their fault. Everyone deserves a healthy, non-violent relationship`,
-                `Connect your friend to resources in their community that can give them information and guidance - SEE EMOTIONAL RESOURCES and LEGAL RESOURCES`
+                `Connect your friend to resources in their community that can give them information and guidance - See Emotional Resources and Legal Resources`
             ],
         },
         looking: {
@@ -266,8 +269,8 @@ export const contentLabels = {
         and access to information for young adults. This website aims to help young adults identify the signs of family 
         violence in their own, and friends’, relationships. It offers holistic advice about the options available to them 
         at early stages of family violence.`,
-            `This project started with the Just Leadership Program, an initiative of the Monash Law Students’ Society Social Justice and Equity portfolio.
-        This program affords students an opportunity to learn from high profile speakers associated with social justice 
+            `This project started with five eager law students (Gavin Choong, Alexandra Culshaw, Amelia Grossi, Linda Kim Le, Mary Pirozek) and the Just Leadership Program – an initiative of the Monash Law Students’ Society Social Justice and Equity portfolio. This program affords students an opportunity to learn from high profile 
+        speakers associated with social justice 
         in the law. As the Women’s Rights group, we were responsible for creating a project that would further gender equity.`,
         ],
     },
@@ -331,7 +334,7 @@ export const contentLabels = {
         },
         {
             "index": 5,
-            "question": "Does your partner experience mental health issues? e.g. depression, anxiety.",
+            "question": "Does your partner experience mental health issues? (e.g. depression, anxiety)",
             "points": {
                 "1": 0.9,
                 "2": 1,
@@ -370,11 +373,11 @@ export const contentLabels = {
                 "2": "Yes",
                 "maybe": null
             },
-            "popUp": "17% of women who experience family violence experience violence for the first time when they fell pregnant."
+            "popUp": "17% of women who are victims of family violence experienced their first violent encounter when they fell pregnant."
         },
         {
             "index": 8,
-            "question": "Do you regularly use drugs or alcohol? E.g. more than three standard twice a week.",
+            "question": "Do you regularly use drugs or alcohol? (e.g. upwards of three standards, two or more times a week)",
             "points": {
                 "1": 0,
                 "2": 5,
@@ -388,7 +391,7 @@ export const contentLabels = {
         },
         {
             "index": 9,
-            "question": "Does your partner regularly use drugs or alcohol? e.g. more than three times a week",
+            "question": "Does your partner regularly use drugs or alcohol? (e.g. more than three times a week)",
             "points": {
                 "1": 0,
                 "2": 5,
@@ -416,7 +419,7 @@ export const contentLabels = {
         },
         {
             "index": 11,
-            "question": "Has your partner ever threatened to physically harm you or someone close to you? (This may include pets)",
+            "question": "Has your partner ever threatened to physically harm you or someone close to you? (this may include pets)",
             "points": {
                 "1": 0,
                 "2": 50,
@@ -427,7 +430,7 @@ export const contentLabels = {
                 "2": "My partner sometimes does this",
                 "3": "Yes, my partner often does this"
             },
-            "popUp": "One in five women had experienced violence from a current or previous partner since the age of 15"
+            "popUp": "One in five women have experienced violence from a current or previous partner since the age of 15."
         },
         {
             "index": 12,
@@ -442,7 +445,7 @@ export const contentLabels = {
                 "2": "My partner sometimes does this",
                 "3": "Yes, my partner often does this"
             },
-            "popUp": "More than one in three Australian women have experienced violence"
+            "popUp": "More than one in three Australian women have experienced violence."
         },
         {
             "index": 13,
@@ -457,7 +460,7 @@ export const contentLabels = {
                 "2": "Sometimes",
                 "3": "Yes, I do"
             },
-            "popUp": "In 2015, intimate partner violence contributed to 12% of the burden of anxiety disorders in females"
+            "popUp": "In 2015, intimate partner violence contributed to 12% of anxiety disorders suffered by Australian females."
         },
         {
             "index": 14,
@@ -503,7 +506,7 @@ export const contentLabels = {
         },
         {
             "index": 17,
-            "question": "Has your partner been violent in situations that did not involve you? e.g. getting into physical fights with other people?",
+            "question": "Has your partner been violent in situations that did not involve you? (e.g. getting into physical fights with other people)",
             "points": {
                 "1": 50,
                 "2": 10,
@@ -576,7 +579,7 @@ export const contentLabels = {
         },
         {
             "index": 5,
-            "question": "Does your friend’s experience mental health issues? e.g. depression, anxiety.",
+            "question": "Does your friend’s experience mental health issues? (e.g. depression, anxiety)",
             "points": {
                 "1": 0.9,
                 "2": 1,
@@ -615,11 +618,11 @@ export const contentLabels = {
                 "2": "Yes",
                 "maybe": null
             },
-            "popUp": "17% of women who experience family violence experience violence for the first time when they fell pregnant."
+            "popUp": "17% of women who are victims of family violence experienced their first violent encounter when they fell pregnant."
         },
         {
             "index": 8,
-            "question": "Does your friend regularly use drugs or alcohol? E.g. more than three standard twice a week.",
+            "question": "Does your friend regularly use drugs or alcohol? (e.g. more than three standard twice a week)",
             "points": {
                 "1": 0,
                 "2": 5,
@@ -633,7 +636,7 @@ export const contentLabels = {
         },
         {
             "index": 9,
-            "question": "Does your friend’s partner regularly use drugs or alcohol? e.g. more than three times a week",
+            "question": "Does your friend’s partner regularly use drugs or alcohol? (e.g. more than three times a week)",
             "points": {
                 "1": 0,
                 "2": 5,
@@ -661,7 +664,7 @@ export const contentLabels = {
         },
         {
             "index": 11,
-            "question": "Has your friend’s partner ever threatened to physically harm you or someone close to you? (This may include pets)",
+            "question": "Has your friend’s partner ever threatened to physically harm you or someone close to you? (this may include pets)",
             "points": {
                 "1": 0,
                 "2": 50,
@@ -672,7 +675,7 @@ export const contentLabels = {
                 "2": "My friend’s partner sometimes does this",
                 "3": "Yes, my friend’s partner often does this"
             },
-            "popUp": "One in five women had experienced violence from a current or previous partner since the age of 15"
+            "popUp": "One in five women have experienced violence from a current or previous partner since the age of 15."
         },
         {
             "index": 12,
@@ -687,7 +690,7 @@ export const contentLabels = {
                 "2": "My friend’s partner sometimes does this",
                 "3": "Yes, my friend’s partner often does this"
             },
-            "popUp": "More than one in three Australian women have experienced violence"
+            "popUp": "More than one in three Australian women have experienced violence."
         },
         {
             "index": 13,
@@ -702,7 +705,7 @@ export const contentLabels = {
                 "2": "Sometimes",
                 "3": "Yes, I do"
             },
-            "popUp": "In 2015, intimate partner violence contributed to 12% of the burden of anxiety disorders in females"
+            "popUp": "In 2015, intimate partner violence contributed to 12% of anxiety disorders suffered by Australian females."
         },
         {
             "index": 14,
@@ -748,7 +751,7 @@ export const contentLabels = {
         },
         {
             "index": 17,
-            "question": "Has your friend’s partner been violent in situations that did not involve you? e.g. getting into physical fights with other people?",
+            "question": "Has your friend’s partner been violent in situations that did not involve you? (e.g. getting into physical fights with other people)",
             "points": {
                 "1": 50,
                 "2": 10,

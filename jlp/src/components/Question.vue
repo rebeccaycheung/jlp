@@ -10,7 +10,7 @@
     </div>
     <div v-if="!isHidden" class="popUp">
       <b-message type="is-info">
-        <b>Did you know:</b>
+        <b>Did you know?:</b>
           {{ popUp }}
       </b-message>
     </div>

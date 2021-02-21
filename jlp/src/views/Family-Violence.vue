@@ -34,7 +34,9 @@
           <UnorderedList :list="$options.say.list1"/>
         </b-tab-item>
         <b-tab-item :label="$options.definitions.title">
-          <Paragraph :list="$options.definitions.content"/>
+          <p v-for="item in $options.definitions.content" :key="item" class="definitions">
+            {{ item }}
+          </p>
         </b-tab-item>
       </b-tabs>
     </section>
@@ -66,5 +68,10 @@ export default {
 img {
   width: 200px;
   padding: 20px;
+}
+
+.definitions:nth-child(2n+1) {
+  text-decoration: underline;
+  padding-top: 20px;
 }
 </style>

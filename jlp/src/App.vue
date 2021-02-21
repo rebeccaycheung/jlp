@@ -12,16 +12,16 @@
                 <router-link to="/quiz">Quiz</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/help">Getting help</router-link>
+                <router-link to="/help">Getting Help</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/family-violence">Family violence</router-link>
+                <router-link to="/family-violence">Family Violence</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/support">Supporting a friend</router-link>
+                <router-link to="/support">Supporting a Friend</router-link>
             </b-navbar-item>
             <b-navbar-item>
-                <router-link to="/about">About us</router-link>
+                <router-link to="/about">About Us</router-link>
             </b-navbar-item>
         </template>
         <template slot="end">
