@@ -30,24 +30,19 @@ export default {
     Paragraph
   },
   mounted() {
-    if (this.$store.state.total <= 0) {
+    if (this.$store.state.total >= 0 && this.$store.state.total <= 10) {
       this.currentTitle = this.$options.positiveTitle
       this.currentContent = this.$options.positiveContent
       this.currentLinks.push(this.$options.support)
       this.currentLinks.push(this.$options.family)
     }
-    else if (this.$store.state.total >= 1 && this.$store.state.total <= 4) {
-      this.currentTitle = this.$options.warningTitle
-      this.currentContent = this.$options.warningContent
-      this.currentLinks.push(this.$options.family)
-    }
-    else if (this.$store.state.total >= 5 && this.$store.state.total <= 9) {
+    else if (this.$store.state.total >= 11 && this.$store.state.total <= 50) {
       this.currentTitle = this.$options.negativeTitle
       this.currentContent = this.$options.negativeContent
       this.currentLinks.push(this.$options.family)
       this.currentLinks.push(this.$options.help)
     }
-    else if (this.$store.state.total >= 10) {
+    else if (this.$store.state.total >= 51) {
       this.currentTitle = this.$options.urgentTitle
       this.currentContent = this.$options.urgentContent
       this.currentLinks.push(this.$options.help)
@@ -83,13 +78,6 @@ export default {
       `However, while you may have a healthy relationship, a friend of yours may not. If you think that you
       may know someone who may be in an unhealthy relationship, check out the following pages to
       find out more about unhealthy relationships and how you can help that person end the abuse.`
-  ],
-  warningTitle: `This quiz detects a few signs of an unhealthy relationship`,
-  warningContent: [
-      `You might be noticing a couple of things in your relationship that are unhealthy, but it doesn’t
-      necessarily mean they are warning signs. However, while you may have a healthy relationship, a friend of yours may not. If you think that you know someone who may be in an unhealthy relationship, check out the following pages to find out more about unhealthy relationships and how you can help that person.
-      It may be useful to stay informed so that you can recognise the warning signs of an unhealthy
-      relationship and the law surrounding family violence.`
   ],
   negativeTitle: `This quiz has detected some serious signs of an unhealthy relationship`,
   negativeContent: [

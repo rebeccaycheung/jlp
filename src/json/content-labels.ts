@@ -508,9 +508,9 @@ export const contentLabels = {
             "index": 17,
             "question": "Has your partner been violent in situations that did not involve you? (e.g. getting into physical fights with other people)",
             "points": {
-                "1": 50,
+                "1": 0,
                 "2": 10,
-                "3": 60
+                "3": 20
             },
             "text": {
                 "1": "No, my partner never does this",
@@ -753,9 +753,9 @@ export const contentLabels = {
             "index": 17,
             "question": "Has your friend’s partner been violent in situations that did not involve your friend? (e.g. getting into physical fights with other people)",
             "points": {
-                "1": 50,
+                "1": 0,
                 "2": 10,
-                "3": 60
+                "3": 20
             },
             "text": {
                 "1": "No, my friend’s partner never does this",
