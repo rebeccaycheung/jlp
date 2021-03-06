@@ -522,64 +522,64 @@ export const contentLabels = {
     [QUIZ_FRIEND]: [
         {
             "index": 1,
-            "question": "Do your friend close relationships with your friends or family?",
+            "question": "Does your friend have a close relationship with their friends and family?",
             "points": {
                 "1": 0.75,
                 "2": 1,
                 "3": 2
             },
             "text": {
-                "1": "Yes, my friend have strong relationships with friends and family",
-                "2": "My friend have some close relationships with friends or family",
-                "3": "No, my friend have no close relationships with friends or family"
+                "1": "Yes, my friend has strong relationships with friends and family",
+                "2": "My friend has some close relationships with friends or family",
+                "3": "No, my friend has no close relationships with friends or family"
             },
         },
         {
             "index": 2,
-            "question": "Does your friend’s your partner ever discourage you from spending time with your friends or family?",
+            "question": "Does your friend’s partner ever discourage them from spending time with their friends or family?",
             "points": {
                 "1": 0,
                 "2": 5,
                 "3": 10
             },
             "text": {
-                "1": "Their partner never discourages me from spending time with my friends and family",
-                "2": "Their partner sometimes discourages me from spending time with my friends and family",
-                "3": "Their partner often discourages me from spending time with my friends and family"
+                "1": "Their partner never discourages them from spending time with their friends and family",
+                "2": "Their partner sometimes discourages them from spending time with their friends and family",
+                "3": "Their partner often discourages them from spending time with their friends and family"
             }
         },
         {
             "index": 3,
-            "question": "Does your friend’s  partner act jealously or obsessively over you?",
+            "question": "Does your friend’s  partner act jealously or obsessively over them?",
             "points": {
                 "1": 0,
                 "2": 5,
                 "3": 10
             },
             "text": {
-                "1": "My friend’s partner is never jealous or obsessive over me",
-                "2": "My friend’s partner is sometimes jealous and/or obsessive over me",
-                "3": "My friend’s partner is often jealous and/or obsessive over me"
+                "1": "My friend’s partner is never jealous or obsessive over them",
+                "2": "My friend’s partner is sometimes jealous and/or obsessive over them",
+                "3": "My friend’s partner is often jealous and/or obsessive over them"
             }
         },
         {
             "index": 4,
-            "question": "Does your friend’s partner check your phone or social media to look at who you’ve been talking to?",
+            "question": "Does your friend’s partner check their phone or social media to look at who they’ve been talking to?",
             "points": {
                 "1": 0,
                 "2": 5,
                 "3": 10
             },
             "text": {
-                "1": "My friend’s partner never checks my phone or social media",
-                "2": "My friend’s partner sometimes checks my phone or social media",
-                "3": "My friend’s partner often checks my phone or social media"
+                "1": "My friend’s partner never checks my friend’s phone or social media",
+                "2": "My friend’s partner sometimes checks my friend’s phone or social media",
+                "3": "My friend’s partner often checks my friend’s phone or social media"
     
             }
         },
         {
             "index": 5,
-            "question": "Does your friend’s experience mental health issues? (e.g. depression, anxiety)",
+            "question": "Does your friend experience mental health issues? (e.g. depression, anxiety)",
             "points": {
                 "1": 0.9,
                 "2": 1,
@@ -593,7 +593,7 @@ export const contentLabels = {
         },
         {
             "index": 6,
-            "question": "If you answered yes to question 5, has your friend’s partner ever threatened to commit suicide or blamed you for their mental health problems?",
+            "question": "If you answered yes to question 5, has your friend’s partner ever threatened to commit suicide or blamed your friend for their mental health problems?",
             "points": {
                 "1": 50,
                 "2": 40,
@@ -622,7 +622,7 @@ export const contentLabels = {
         },
         {
             "index": 8,
-            "question": "Does your friend regularly use drugs or alcohol? (e.g. more than three standard twice a week)",
+            "question": "Does your friend regularly use drugs or alcohol? (e.g. upwards of three standards, two or more times a week)",
             "points": {
                 "1": 0,
                 "2": 5,
@@ -664,7 +664,7 @@ export const contentLabels = {
         },
         {
             "index": 11,
-            "question": "Has your friend’s partner ever threatened to physically harm you or someone close to you? (this may include pets)",
+            "question": "Has your friend’s partner ever threatened to physically harm them or someone close to them? (this may include pets)",
             "points": {
                 "1": 0,
                 "2": 50,
@@ -679,7 +679,7 @@ export const contentLabels = {
         },
         {
             "index": 12,
-            "question": "Has your friend’s partner ever physically harmed you?",
+            "question": "Has your friend’s partner ever physically harmed your friend?",
             "points": {
                 "1": 0,
                 "2": 50,
@@ -709,7 +709,7 @@ export const contentLabels = {
         },
         {
             "index": 14,
-            "question": "Does your friend’s partner want to know where you are at all times?",
+            "question": "Does your friend’s partner want to know where your friend is, at all times?",
             "points": {
                 "1": 0,
                 "2": 5,
@@ -723,7 +723,7 @@ export const contentLabels = {
         },
         {
             "index": 15,
-            "question": "Does your friend’s partner call/text you constantly, and get angry if you do not respond?",
+            "question": "Does your friend’s partner call/text your friend constantly, and get angry if there is no response?",
             "points": {
                 "1": 0,
                 "2": 10,
@@ -737,7 +737,7 @@ export const contentLabels = {
         },
         {
             "index": 16,
-            "question": "Has your friend’s partner ever pressured you to do something sexual that you did not want to do?",
+            "question": "Has your friend’s partner ever pressured your friend into doing something sexual your friend did not want to do?",
             "points": {
                 "1": 0,
                 "2": 50,
@@ -751,7 +751,7 @@ export const contentLabels = {
         },
         {
             "index": 17,
-            "question": "Has your friend’s partner been violent in situations that did not involve you? (e.g. getting into physical fights with other people)",
+            "question": "Has your friend’s partner been violent in situations that did not involve your friend? (e.g. getting into physical fights with other people)",
             "points": {
                 "1": 50,
                 "2": 10,
